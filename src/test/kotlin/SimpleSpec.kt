@@ -1,24 +1,31 @@
 import hello.SampleCalculator
+import org.jetbrains.spek.api.Spek
+import org.jetbrains.spek.api.dsl.describe
+import org.jetbrains.spek.api.dsl.it
 import org.junit.Assert.assertEquals
-
+import org.junit.platform.runner.JUnitPlatform
+import org.junit.runner.RunWith
 
 /**
  * Created by Bogumil Zebek on 2017-11-17.
  */
-object CalculatorSpec: Spek({
-    given("a calculator") {
+
+
+@RunWith(JUnitPlatform::class)
+object CalculatorSpec : Spek({
+    describe("a calculator") {
         val calculator = SampleCalculator()
-        on("addition") {
+
+        it("should return the result of adding the first number to the second number") {
             val sum = calculator.sum(2, 4)
-            it("should return the result of adding the first number to the second number") {
-                assertEquals(6, sum)
-            }
+            assertEquals(6, sum)
         }
-        on("subtraction") {
+
+
+        it("should return the result of subtracting the second number from the first number") {
             val subtract = calculator.subtract(4, 2)
-            it("should return the result of subtracting the second number from the first number") {
-                assertEquals(2, subtract)
-            }
+            assertEquals(2, subtract)
         }
+
     }
 })
