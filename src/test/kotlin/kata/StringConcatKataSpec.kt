@@ -13,7 +13,7 @@ import org.junit.runner.RunWith
 @RunWith(JUnitPlatform::class)
 object StringConcatKataSpec : Spek({
     describe("a string concatenation") {
-        val concatString = { string1: String, string2: String -> string1 + string2 }
+        val concatString: (s1: String, s2: String) -> String = { string1, string2 -> string1 + string2 }
 
         it("should return concat string") {
             val result = concatString("a","b")
