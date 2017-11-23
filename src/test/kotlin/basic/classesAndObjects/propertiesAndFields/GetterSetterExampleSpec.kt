@@ -1,9 +1,9 @@
-package basic
+package basic.classesAndObjects.propertiesAndFields
 
+import basic.classesAndObjects.propertiesAndFields.GetterSetterExample
 import org.assertj.core.api.Assertions
 import org.jetbrains.spek.api.Spek
 import org.jetbrains.spek.api.dsl.describe
-import org.jetbrains.spek.api.dsl.given
 import org.jetbrains.spek.api.dsl.it
 import org.junit.platform.runner.JUnitPlatform
 import org.junit.runner.RunWith

@@ -1,4 +1,4 @@
-package basic
+package basic.classesAndObjects.propertiesAndFields
 
 /**
  * Created by Bogumil Zebek on 2017-11-23.
