@@ -3,7 +3,7 @@ package basic.classesAndObjects.propertiesAndFields
 /**
  * Created by Bogumil Zebek on 2017-11-23.
  */
-class GetterSetterExample{
+class CustomGetterSetterExample {
     var name = "Init"
         get() = field
         set(value) {

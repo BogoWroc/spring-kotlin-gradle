@@ -1,6 +1,5 @@
 package basic.classesAndObjects.propertiesAndFields
 
-import basic.classesAndObjects.propertiesAndFields.GetterSetterExample
 import org.assertj.core.api.Assertions
 import org.jetbrains.spek.api.Spek
 import org.jetbrains.spek.api.dsl.describe
@@ -12,9 +11,9 @@ import org.junit.runner.RunWith
  * Created by Bogumil Zebek on 2017-11-23.
  */
 @RunWith(JUnitPlatform::class)
-object GetterSetterExampleSpec : Spek({
+object CustomGetterSetterExampleSpec : Spek({
     describe("a getter/setter"){
-        val getterSetterExample = GetterSetterExample()
+        val getterSetterExample = CustomGetterSetterExample()
         it("should be possible to set new value"){
             getterSetterExample.name = "New value"
             Assertions.assertThat(getterSetterExample.name).isEqualTo("New value")
